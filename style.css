@@ -1,0 +1,2866 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #CC1212;
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        width: 100%;
+        height: fit-content;
+    }
+    nav .container-fluid .collapse {
+        text-align: center;
+    }
+    nav .container-fluid a{
+        font-weight: 700;
+        font-size: 120%;
+    }
+    nav .container-fluid a label{
+        color: #ffffff;
+    }
+    nav .container-fluid ul li a{
+        color: color-mix(in srgb, #ffffff, gray 30%);
+    }
+    nav .container-fluid form {
+        width: 50%;
+        padding-left: 10%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    nav .container-fluid form a{
+        position: relative;
+    }
+    nav .container-fluid form a img{
+        width: 90%;
+    }
+    nav .container-fluid form a i{
+        position: absolute;
+        color: #CC1212;
+        top: 10px;
+        left: 30px;
+    }
+    nav .container-fluid form a label{
+        position: absolute; 
+        color: #CC1212;
+        top: 5px;
+        left: 60px;
+    }
+    .hero-section{
+        width: 100%;
+        height: fit-content;
+    }
+    .hero-section .top{ 
+        background: url("../image/image\ 1.png") center no-repeat;
+        padding: 20px 40px 0 20px;
+        width: 100%;
+    }
+    .hero-section .top h1{        
+        width: 87%;
+        color: #ffffff;
+    }
+    .hero-section .top label{     
+        font-size: 150%;
+        font-weight: 600;
+        margin: 2% 0 6%;
+        color: #ffffff;
+    }
+    .hero-section .top p{
+        color: #ffffff;
+        text-align: start;
+        font-size: 120%;
+        width: 92%;
+        margin-bottom: 10%;
+    }
+    .hero-section .top a label{
+        padding: 5% 10%;
+        color: #CC1212;
+        margin-left: 5%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .hero-section .bottom img{
+        padding: 5% 5% 10% 10%;
+        width: 100%;
+    }
+    .mission{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        padding: 10% 5%;
+        background-color: #ffffff;
+    }
+    .mission .top{
+        text-align: center;
+    }
+    .mission .top label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding-bottom: 5%;
+    }
+    .mission .top h2{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .mission .top p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 83%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 15%;
+    }
+    .mission .top .moves{
+        margin-top: 110%;
+    }
+    .mission .top a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .mission .bottom{
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        top: 580px;
+        left: 0%;
+    }
+    .mission .bottom img{
+        width: 60%;
+        height: auto;
+    }
+    .mission .bottom .move{
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+    .mission .bottom .move .img1{
+        z-index: 1;
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+    .mission .bottom .move .img2{
+        position: absolute;
+        left: 45%;
+        top: 200%;
+    }
+    .service{
+        width: 100%;
+        background: #ffffff ;
+        padding-bottom: 30%;
+        text-align: center;
+    }
+    .service label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .service h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .service p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 80%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 10%;
+    }
+    .service .cards{
+        width: 100%;
+        height: fit-content;
+        padding: 0 10% 0;
+    }
+    .service .cards .card{
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        border-radius: 2%;
+        margin-bottom: 30%;
+    }
+    .service .cards .card img{
+        width: 100%;
+        height: auto;
+        background-color: #CC1212;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        -webkit-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+    }
+    .service .cards .card .group{
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    .service .cards .card label{
+        font-size: 130%;
+        text-align: start;
+        width: fit-content;
+        background-color: #CC1212;
+        color: #ffffff;
+        padding: 8% 15% 8% 8%;
+    }
+    .service .cards .card .imge{
+        width: 18%;
+        position: absolute;
+        top: 10px;
+        left: 250px;
+        padding: 3%;
+        border: #CC1212 solid 2px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    }
+    .service .cards .card .imge-2{
+        width: 18%;
+        position: absolute;
+        left: 230px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    .service .cards .card p{
+        text-align: start;
+        padding: 10% 0;
+        color: #000000;
+        font-weight: 600;
+    }
+    .service .cards .card a{
+        color: #CC1212;
+        text-align: start;
+        text-decoration: none;
+        padding: 10% 10%;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .service .link a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .quote{
+        display: none;
+    }
+    .pat{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 30%;
+    }
+    .pat label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .pat h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .pat img{
+        width: 40%;
+        margin: 5% 0 0 10%;
+    }
+    .work{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .work label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .work h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    .work .cards{
+        width: 80%;
+        margin: 0 auto;
+        padding: 15% 5%;
+        border-radius: 5%;
+        margin-bottom: 10%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .work .cards:nth-child(6){
+        margin-bottom: 20%;
+    }
+    .work .cards h5{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        padding: 10% 0;
+    }
+    .work.cards p{
+        color: #000000;
+    }
+    .work a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .test{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .test label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .test h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    .test .cards:nth-child(3){
+        margin-top: 10%;
+    }
+    .test .cards{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10% 5% 15% 5%;
+        color: #000000;
+        border-radius: 5%;
+        margin-bottom: 30%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .test .cards .pic{
+        position: absolute;
+        top: -40px;
+        left: 160px;
+        border-radius: 50%;
+        box-shadow: 0px -8px 15px 1px rgba(0,0,0,0.75);
+    }
+    .join{
+        width: 100%;
+        background-color: #E3E9ED;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 20%;
+    }
+    .join label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 5%;
+    }
+    .join h3{
+        font-weight: 890;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 15%;
+    }
+    .join p{
+        margin-bottom: 15%;
+        padding: 0 10%;
+        font-weight: 700;
+    }
+    .join a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .num{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+    }
+    .num .box{
+        border-bottom: #CC1212 1px solid;
+    }
+    .num label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 10% 0 5%;
+    }
+    .num h3{
+        font-weight: 600;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 150%;
+        padding-bottom: 15%;
+    }
+    .contact{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 20%;
+    }
+    .contact label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 5%;
+    }
+    .contact h3{
+        font-weight: 890;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 15%;
+    }
+    .contact p{
+        margin-bottom: 15%;
+        padding: 0 10%;
+        font-weight: 700;
+    }
+    .contact a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+    .sus{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        background-color: #000000;
+        text-align: start;
+    }
+    footer .top{
+        width: 100%;
+        padding: 10% 10%;
+        border-bottom: 1px solid #CC1212;
+    }
+    footer .top .box a{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    footer .top .box a label{
+        color: #CC1212;
+        font-size: 120%;
+    }
+    footer .top .box p{
+        color: #ffffff;
+        width: 70%;
+        padding: 10% 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 150%;
+        margin-top: 20%;
+        padding-left: 10%;
+    }
+    footer .top .box ul li{
+        padding-top: 10%;
+    }
+    
+    footer .top .box ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    footer .top .box ul li a i{
+        color: #ffffff;
+        padding-right: 5%;
+    }
+    footer .bottom{
+        width: 100%;
+        padding: 5% 2% 10%;
+    }   
+    
+    footer .bottom .left img{
+        width: 7%;
+    }
+    footer .bottom .left label{
+        color: #ffffff;
+        font-size: 68%;
+    }
+    footer .bottom i{
+        color: #ffffff;
+        padding: 0 5% 0 0;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    nav{
+        width: 100%;
+        height: fit-content;
+    }
+    nav .container-fluid .navbar-collapse {
+        text-align: center;
+    }
+    nav .container-fluid a{
+        font-weight: 700;
+        font-size: 120%;
+    }
+    nav .container-fluid a label{
+        color: #ffffff;
+    }
+    nav .container-fluid ul li a{
+        color: color-mix(in srgb, #ffffff, gray 30%);
+    }
+    nav .container-fluid form {
+        width: 50%;
+        padding-left: 13%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    nav .container-fluid form a{
+        position: relative;
+    }
+    nav .container-fluid form a img{
+        width: 90%;
+    }
+    nav .container-fluid form a i{
+        position: absolute;
+        color: #CC1212;
+        top: 10px;
+        left: 30px;
+    }
+    nav .container-fluid form a label{
+        position: absolute; 
+        color: #CC1212;
+        top: 5px;
+        left: 60px;
+    }
+    .hero-section{
+        width: 100%;
+        height: fit-content;
+    }
+    .hero-section .top{ 
+        background: url("../image/image\ 1.png") center no-repeat;
+        padding: 20px 40px 0 20px;
+        width: 100%;
+    }
+    .hero-section .top h1{        
+        width: 87%;
+        color: #ffffff;
+    }
+    .hero-section .top label{     
+        font-size: 150%;
+        font-weight: 600;
+        margin: 2% 0 6%;
+        color: #ffffff;
+    }
+    .hero-section .top p{
+        color: #ffffff;
+        text-align: start;
+        font-size: 120%;
+        width: 92%;
+        margin-bottom: 10%;
+    }
+    .hero-section .top a label{
+        padding: 5% 10%;
+        color: #CC1212;
+        margin-left: 5%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .hero-section .bottom img{
+        padding: 5% 5% 10% 10%;
+        width: 100%;
+    }
+    .mission{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        padding: 10% 5%;
+        background-color: #ffffff;
+    }
+    .mission .top{
+        text-align: center;
+    }
+    .mission .top label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding-bottom: 5%;
+    }
+    .mission .top h2{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .mission .top p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 83%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 15%;
+    }
+    .mission .top .moves{
+        margin-top: 90%;
+    }
+    .mission .top a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .mission .bottom{
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        top: 490px;
+        left: 0%;
+    }
+    .mission .bottom img{
+        width: 60%;
+        height: auto;
+    }
+    .mission .bottom .move{
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+    .mission .bottom .move .img1{
+        z-index: 1;
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+    .mission .bottom .move .img2{
+        position: absolute;
+        left: 45%;
+        top: 200%;
+    }
+    .service{
+        width: 100%;
+        background: #ffffff ;
+        padding-bottom: 30%;
+        text-align: center;
+    }
+    .service label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .service h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .service p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 80%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 10%;
+    }
+    .service .cards{
+        width: 100%;
+        height: fit-content;
+        padding: 0 10% 0;
+    }
+    .service .cards .card{
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        border-radius: 2%;
+        margin-bottom: 30%;
+    }
+    .service .cards .card img{
+        width: 100%;
+        height: auto;
+        background-color: #CC1212;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        -webkit-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+    }
+    .service .cards .card .group{
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    .service .cards .card label{
+        font-size: 130%;
+        text-align: start;
+        width: fit-content;
+        background-color: #CC1212;
+        color: #ffffff;
+        padding: 4% 15% 4% 8%;
+    }
+    .service .cards .card .imge{
+        width: 12%;
+        position: absolute;
+        top: 2px;
+        left: 280px;
+        padding: 3%;
+        border: #CC1212 solid 2px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    }
+    .service .cards .card .imge-2{
+        position: absolute;
+        left: 260px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    .service .cards .card p{
+        text-align: start;
+        padding: 10% 0;
+        color: #000000;
+        font-weight: 600;
+    }
+    .service .cards .card a{
+        color: #CC1212;
+        text-align: start;
+        text-decoration: none;
+        padding: 10% 10%;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .service .link a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .quote{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .quote label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .quote h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .quote .in{
+        width: 100%;
+        padding: 10% 0 15%;
+    }
+    .quote .in input{
+        padding: 3% 5%; 
+        border: #CC1212 1px solid;
+        width: 40%;
+        margin: 4% 5% 4% 5%;
+    }
+    .quote .in input:nth-child(9){
+        width: 90%;
+    }
+    .quote a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .pat{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 30%;
+    }
+    .pat label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .pat h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .pat img{
+        width: 40%;
+        margin: 5% 0 0 10%;
+    }
+    .work{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .work label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .work h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    .work .cards{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10% 5%;
+        border-radius: 5%;
+        margin-bottom: 10%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .work .cards:nth-child(6){
+        margin-bottom: 20%;
+    }
+    .work .cards h5{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        padding: 10% 0;
+    }
+    .work.cards p{
+        color: #000000;
+    }
+    .work a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .test{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .test label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .test h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    .test .cards:nth-child(3){
+        margin-top: 10%;
+    }
+    .test .cards{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10% 5% 15% 5%;
+        color: #000000;
+        border-radius: 5%;
+        margin-bottom: 30%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .test .cards .pic{
+        position: absolute;
+        top: -40px;
+        left: 220px;
+        border-radius: 50%;
+        box-shadow: 0px -8px 15px 1px rgba(0,0,0,0.75);
+    }
+    .join{
+        width: 100%;
+        background-color: #E3E9ED;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 20%;
+    }
+    .join label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 5%;
+    }
+    .join h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        font-size: 120%;
+        padding-bottom: 10%;
+    }
+    .join p{
+        margin-bottom: 15%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .join a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .num{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+    }
+    .num .box{
+        border: #CC1212 1px solid;
+    }
+    .num label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 10% 0 5%;
+    }
+    .num h3{
+        font-weight: 600;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 150%;
+        padding-bottom: 15%;
+    }
+    .contact{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 20%;
+    }
+    .contact label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 5%;
+    }
+    .contact h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 5%;
+    }
+    .contact p{
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .contact a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+    .sus{
+        width: 100%;
+        background-color: #CC1212;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .sus label{
+        color: #ffffff;
+        font-size: 120%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .sus h3{
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 5%;
+    }
+    .sus .row{
+        width: 100%;
+        padding: 0 0 0 8% ;
+    }
+    .sus .row input{
+        padding: 3%;
+        margin-right: 5%;
+        width: 60%;
+    }
+    .sus .row button{
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+    }
+    footer{
+        width: 100%;
+        background-color: #000000;
+        text-align: start;
+    }
+    footer .top{
+        width: 100%;
+        padding: 10% 10%;
+        border-bottom: 1px solid #CC1212;
+    }
+    footer .top .box a{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    footer .top .box a label{
+        color: #CC1212;
+        font-size: 120%;
+    }
+    footer .top .box p{
+        color: #ffffff;
+        width: 70%;
+        padding: 10% 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 150%;
+        margin-top: 10%;
+        padding-left: 10%;
+    }
+    footer .top .box ul li{
+        padding-top: 6%;
+    }
+    
+    footer .top .box ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    footer .top .box ul li a i{
+        color: #ffffff;
+        padding-right: 5%;
+    }
+    footer .bottom{
+        width: 100%;
+        padding: 5% 2% 10%;
+    }   
+    
+    footer .bottom .left img{
+        width: 7%;
+    }
+    footer .bottom .left label{
+        color: #ffffff;
+        font-size: 68%;
+    }
+    footer .bottom i{
+        color: #ffffff;
+        padding: 0 5% 0 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 922px) {
+    nav{
+        width: 100%;
+        height: fit-content;
+    }
+    nav .container-fluid .navbar-collapse {
+        text-align: center;
+    }
+    nav .container-fluid a{
+        font-weight: 700;
+        font-size: 120%;
+    }
+    nav .container-fluid a label{
+        color: #ffffff;
+    }
+    nav .container-fluid ul li a{
+        color: color-mix(in srgb, #ffffff, gray 30%);
+    }
+    nav .container-fluid form {
+        width: 50%;
+        padding-left: 13%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    nav .container-fluid form a{
+        position: relative;
+    }
+    nav .container-fluid form a img{
+        width: 90%;
+    }
+    nav .container-fluid form a i{
+        position: absolute;
+        color: #CC1212;
+        top: 10px;
+        left: 30px;
+    }
+    nav .container-fluid form a label{
+        position: absolute; 
+        color: #CC1212;
+        top: 5px;
+        left: 60px;
+    }
+    .hero-section{
+        width: 100%;
+        height: fit-content;
+    }
+    .hero-section .top{ 
+        background: url("../image/image\ 1.png") center no-repeat;
+        padding: 20px 40px 0 20px;
+        width: 100%;
+    }
+    .hero-section .top h1{        
+        width: 87%;
+        color: #ffffff;
+    }
+    .hero-section .top label{     
+        font-size: 150%;
+        font-weight: 600;
+        margin: 2% 0 6%;
+        color: #ffffff;
+    }
+    .hero-section .top p{
+        color: #ffffff;
+        text-align: start;
+        font-size: 120%;
+        width: 92%;
+        margin-bottom: 10%;
+    }
+    .hero-section .top a label{
+        padding: 5% 10%;
+        color: #CC1212;
+        margin-left: 5%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .hero-section .bottom img{
+        padding: 5% 5% 10% 10%;
+        width: 100%;
+    }
+    .mission{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        padding: 10% 5%;
+        background-color: #ffffff;
+    }
+    .mission .top{
+        text-align: center;
+    }
+    .mission .top label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding-bottom: 5%;
+    }
+    .mission .top h2{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .mission .top p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 83%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 15%;
+    }
+    .mission .top .moves{
+        margin-top: 100%;
+    }
+    .mission .top a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .mission .bottom{
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        top: 490px;
+        left: 0%;
+    }
+    .mission .bottom img{
+        width: 60%;
+        height: auto;
+    }
+    .mission .bottom .move{
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+    .mission .bottom .move .img1{
+        z-index: 1;
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+    .mission .bottom .move .img2{
+        position: absolute;
+        left: 45%;
+        top: 250%;
+    }
+    .service{
+        width: 100%;
+        background: #ffffff ;
+        padding-bottom: 30%;
+        text-align: center;
+    }
+    .service label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .service h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .service p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 80%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 10%;
+    }
+    .service .cards{
+        width: 100%;
+        height: fit-content;
+        padding: 0 10% 0;
+    }
+    .service .cards .card{
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        border-radius: 2%;
+        margin-bottom: 30%;
+    }
+    .service .cards .card img{
+        width: 100%;
+        height: auto;
+        background-color: #CC1212;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        -webkit-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+    }
+    .service .cards .card .group{
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    .service .cards .card label{
+        font-size: 130%;
+        text-align: start;
+        width: fit-content;
+        background-color: #CC1212;
+        color: #ffffff;
+        padding: 4% 15% 4% 8%;
+    }
+    .service .cards .card .imge{
+        width: 12%;
+        position: absolute;
+        top: 2px;
+        left: 300px;
+        padding: 3%;
+        border: #CC1212 solid 2px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    }
+    .service .cards .card .imge-2{
+        position: absolute;
+        left: 280px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    .service .cards .card p{
+        text-align: start;
+        padding: 10% 0;
+        color: #000000;
+        font-weight: 600;
+    }
+    .service .cards .card a{
+        color: #CC1212;
+        text-align: start;
+        text-decoration: none;
+        padding: 10% 10%;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .service .link a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .quote{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .quote label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .quote h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .quote .in{
+        width: 100%;
+        padding: 10% 0 15%;
+    }
+    .quote .in input{
+        padding: 3% 5%; 
+        border: #CC1212 1px solid;
+        width: 40%;
+        margin: 4% 5% 4% 5%;
+    }
+    .quote .in input:nth-child(9){
+        width: 90%;
+    }
+    .quote a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .pat{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .pat label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .pat h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .pat img{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .work{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .work label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .work h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    .work .cards{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5% 5%;
+        border-radius: 5%;
+        margin-bottom: 10%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .work .cards:nth-child(6){
+        margin-bottom: 20%;
+    }
+    .work .cards h5{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        padding: 5% 0;
+    }
+    .work.cards p{
+        color: #000000;
+    }
+    .work a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .test{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .test label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .test h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .test .cards:nth-child(3){
+        margin-top: 10%;
+    }
+    .test .cards{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding: 5% 5% 5% 5%;
+        color: #000000;
+        border-radius: 5%;
+        margin-bottom: 15%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .test .cards .pic{
+        position: absolute;
+        top: -40px;
+        left: 290px;
+        border-radius: 50%;
+        box-shadow: 0px -8px 15px 1px rgba(0,0,0,0.75);
+    }
+    .join{
+        width: 100%;
+        background-color: #E3E9ED;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .join label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 0;
+    }
+    .join h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        font-size: 120%;
+        padding: 5% 0;
+    }
+    .join p{
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .join a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .num{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+    }
+    .num .box{
+        border: #CC1212 1px solid;
+    }
+    .num label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 10% 0 5%;
+    }
+    .num h3{
+        font-weight: 600;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 150%;
+        padding-bottom: 15%;
+    }
+    .contact{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .contact label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 3%;
+    }
+    .contact h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 3%;
+    }
+    .contact p{
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .contact a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+    .sus{
+        width: 100%;
+        background-color: #CC1212;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .sus label{
+        color: #ffffff;
+        font-size: 120%;
+        font-weight: 600;
+        padding: 5% 0 3%;
+    }
+    .sus h3{
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 5%;
+    }
+    .sus .row{
+        width: 100%;
+        padding: 0 0 0 8% ;
+    }
+    .sus .row input{
+        padding: 3%;
+        margin-right: 5%;
+        width: 60%;
+    }
+    .sus .row button{
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+    }
+    footer{
+        width: 100%;
+        background-color: #000000;
+        text-align: start;
+    }
+    footer .top{
+        width: 100%;
+        padding: 10% 5%;
+        border-bottom: 1px solid #CC1212;
+    }
+    footer .top .box a{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    footer .top .box a label{
+        padding: 0 0 0;
+        margin-top: 0;
+        color: #CC1212;
+        font-size: 120%;
+    }
+    footer .top .box .pt {
+        color: #ffffff;
+        width: 70%;
+        padding: 3% 0 0 ;
+    }
+    footer .top .box p{
+        color: #ffffff;
+        width: 70%;
+        padding: 10% 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 150%;
+        margin-top: 10%;
+        padding-left: 10%;
+    }
+    footer .top .box ul li{
+        padding-top: 6%;
+    }
+    footer .top .boxs ul li{
+        padding-top: 6%;
+    }
+    
+    footer .top .box ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    footer .top .box ul li a i{
+        color: #ffffff;
+        padding-right: 5%;
+    }
+    footer .bottom{
+        width: 100%;
+        padding: 5% 5% 5%;
+    }   
+    
+    footer .bottom .left img{
+        width: 5%;
+    }
+    footer .bottom .left label{
+        color: #ffffff;
+        font-size: 130%;
+    }
+    footer .bottom i{
+        color: #ffffff;
+        padding: 0 10% 0 0;
+    }
+}
+@media only screen and (min-width: 922px) and (max-width: 1200px) {
+    nav{
+        width: 100%;
+        height: fit-content;
+    }
+    nav .container-fluid .navbar-collapse {
+        /* background-color: #000000;    */
+        text-align: center;
+    }
+    nav .container-fluid a{
+        font-weight: 700;
+        font-size: 120%;
+        margin-right: 10%;
+    }
+    nav .container-fluid a label{
+        color: #ffffff;
+    }
+    nav .container-fluid ul li{
+        padding: 0 4% 0 4%;
+    }
+    nav .container-fluid ul li a{
+        font-size: 100%;
+        color: color-mix(in srgb, #ffffff, gray 30%);
+    }
+    nav .container-fluid form {
+        padding-left: 36%;
+        height: fit-content;
+    }
+    nav .container-fluid form a{
+        position: relative;
+        padding-right: 0;
+    }
+    nav .container-fluid form a img{
+        width: 90%;
+    }
+    nav .container-fluid form a i{
+        position: absolute;
+        color: #CC1212;
+        top: 10px;
+        left: 30px;
+    }
+    nav .container-fluid form a label{
+        position: absolute; 
+        color: #CC1212;
+        top: 5px;
+        left: 60px;
+    }
+    .hero-section{
+        width: 100%;
+        height: fit-content;
+    }
+    .hero-section .top{ 
+        background: url("../image/image\ 1.png") center no-repeat;
+        padding: 20px 40px 0 20px;
+        width: 100%;
+    }
+    .hero-section .top h1{        
+        width: 87%;
+        color: #ffffff;
+    }
+    .hero-section .top label{     
+        font-size: 150%;
+        font-weight: 600;
+        margin: 2% 0 6%;
+        color: #ffffff;
+    }
+    .hero-section .top p{
+        color: #ffffff;
+        text-align: start;
+        font-size: 120%;
+        width: 92%;
+        margin-bottom: 10%;
+    }
+    .hero-section .top a label{
+        padding: 5% 10%;
+        color: #CC1212;
+        margin-left: 5%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .hero-section .bottom img{
+        padding: 5% 5% 10% 10%;
+        width: 100%;
+    }
+    .mission{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        padding: 10% 5%;
+        background-color: #ffffff;
+    }
+    .mission .top{
+        text-align: center;
+    }
+    .mission .top label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding-bottom: 5%;
+    }
+    .mission .top h2{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .mission .top p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 83%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 15%;
+    }
+    .mission .top .moves{
+        margin-top: 100%;
+    }
+    .mission .top a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .mission .bottom{
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        top: 490px;
+        left: 0%;
+    }
+    .mission .bottom img{
+        width: 60%;
+        height: auto;
+    }
+    .mission .bottom .move{
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+    .mission .bottom .move .img1{
+        z-index: 1;
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+    .mission .bottom .move .img2{
+        position: absolute;
+        left: 45%;
+        top: 350%;
+    }
+    .service{
+        width: 100%;
+        background: #ffffff ;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    .service label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .service h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 3%;
+    }
+    .service p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 80%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 6%;
+    }
+    .service .cards{
+        width: 100%;
+        padding-left: 5%;
+        height: fit-content;
+    }
+    .service .cards .card{
+        width: 28%;
+        height: fit-content;
+        padding: 0;
+        margin: 0 2% 10%;
+        -webkit-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        border-radius: 2%;
+    }
+    .service .cards .card img{
+        width: 100%;
+        height: auto;
+        background-color: #CC1212;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+    .service .cards .card .group{
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    .service .cards .card label{
+        font-size: 130%;
+        text-align: start;
+        width: fit-content;
+        background-color: #CC1212;
+        color: #ffffff;
+        padding: 4% 15% 4% 8%;
+    }
+    .service .cards .card .imge{
+        width: 15%;
+        position: absolute;
+        top: 4px;
+        left: 240px;
+        padding: 3%;
+        border: #CC1212 solid 2px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    }
+    .service .cards .card .imge-2{
+        position: absolute;
+        left: 220px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    .service .cards .card p{
+        text-align: start;
+        padding: 10% 0;
+        color: #000000;
+        font-weight: 600;
+    }
+    .service .cards .card-2 p{
+        padding: 5% 0;
+    }
+    .service .cards .card a{
+        color: #CC1212;
+        text-align: start;
+        text-decoration: none;
+        padding: 10% 10%;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .service .link a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .quote{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .quote label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .quote h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2%;
+    }
+    .quote .in{
+        width: 100%;
+        padding: 3% 0 5%;
+    }
+    .quote .in input{
+        padding: 3% 5%; 
+        border: #CC1212 1px solid;
+        width: 40%;
+        margin: 4% 5% 4% 5%;
+    }
+    .quote .in input:nth-child(9){
+        width: 90%;
+    }
+    .quote a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .pat{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .pat label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 5%;
+    }
+    .pat h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 6%;
+    }
+    .pat img{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .work{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .work label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .work h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    .work .car{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .work .cards{
+        width: 40%;
+        padding: 5% 5%;
+        margin:0 5% 5%;
+        border-radius: 5%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .work .cards h5{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        padding: 5% 0;
+    }
+    .work.cards p{
+        color: #000000;
+    }
+    .work a {
+        padding: 2.5% 5%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .test{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .test label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .test h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .test .cards{
+        width: 25%;
+        position: relative;
+        padding: 5% 2% 3% 2%;
+        color: #000000;
+        border-radius: 5%;
+        margin: 0 0 10% 6%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .test .cards .pic{
+        position: absolute;
+        top: -40px;
+        left: 80px;
+        border-radius: 50%;
+        box-shadow: 0px -8px 15px 1px rgba(0,0,0,0.75);
+    }
+    .join{
+        width: 100%;
+        background-color: #E3E9ED;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .join label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 0;
+    }
+    .join h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        font-size: 120%;
+        padding: 2% 0;
+    }
+    .join p{
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .join a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .num{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+    }
+    .num .box{
+        border: #CC1212 1px solid;
+    }
+    .num label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 10% 0 5%;
+    }
+    .num h3{
+        font-weight: 600;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 150%;
+        padding-bottom: 15%;
+    }
+    .contact{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .contact label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 1%;
+    }
+    .contact h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 3%;
+    }
+    .contact p{
+        margin-bottom: 8%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .contact a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+    .sus{
+        width: 100%;
+        background-color: #CC1212;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .sus label{
+        color: #ffffff;
+        font-size: 120%;
+        font-weight: 600;
+        padding: 5% 0 1%;
+    }
+    .sus h3{
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 5%;
+    }
+    .sus .row{
+        width: 100%;
+        padding: 0 0 0 8% ;
+    }
+    .sus .row input{
+        padding: 3%;
+        margin-right: 5%;
+        width: 60%;
+    }
+    .sus .row button{
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+    }
+    footer{
+        width: 100%;
+        background-color: #000000;
+        text-align: start;
+    }
+    footer .top{
+        width: 100%;
+        padding: 10% 5%;
+        border-bottom: 1px solid #CC1212;
+    }
+    footer .top .box a{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    footer .top .box a label{
+        padding: 0 0 0;
+        margin-top: 0;
+        color: #CC1212;
+        font-size: 120%;
+    }
+    footer .top .box .pt {
+        color: #ffffff;
+        width: 70%;
+        padding: 3% 0 0 ;
+    }
+    footer .top .box p{
+        color: #ffffff;
+        width: 70%;
+        padding: 10% 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 150%;
+        margin-top: 10%;
+        padding-left: 10%;
+    }
+    footer .top .box ul li{
+        padding-top: 6%;
+    }
+    footer .top .boxs ul li{
+        padding-top: 6%;
+    }
+    
+    footer .top .box ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    footer .top .box ul li a i{
+        color: #ffffff;
+        padding-right: 5%;
+    }
+    footer .bottom{
+        width: 100%;
+        padding: 5% 5% 5%;
+    }   
+    
+    footer .bottom .left img{
+        width: 5%;
+    }
+    footer .bottom .left label{
+        color: #ffffff;
+        font-size: 130%;
+    }
+    footer .bottom i{
+        color: #ffffff;
+        padding: 0 10% 0 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body{
+        padding-right: 10%;
+    }
+    nav{
+        width: 100%;
+
+        height: fit-content;
+    }
+    nav .container-fluid .navbar-collapse {
+        text-align: center;
+    }
+    nav .container-fluid a{
+        font-weight: 700;
+        font-size: 120%;
+    }
+    nav .container-fluid a label{
+        color: #ffffff;
+    }
+    nav .container-fluid ul{
+        width: 100%;
+        margin-left: 60%;
+    }
+    nav .container-fluid ul li a{
+        color: color-mix(in srgb, #ffffff, gray 30%);
+    }
+    nav .container-fluid form a{
+        position: relative;
+    }
+    nav .container-fluid form a i{
+        position: absolute;
+        color: #CC1212;
+        top: 15px;
+        left: 40px;
+    }
+    nav .container-fluid form a label{
+        position: absolute; 
+        color: #CC1212;
+        top: 10px;
+        left: 70px;
+    }
+    .hero-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        height: fit-content;
+    }
+    .hero-section .top{
+        width: 60%;
+    }
+    .hero-section .top h1{        
+        width: 87%;
+        color: #ffffff;
+    }
+    .hero-section .top label{     
+        font-size: 150%;
+        font-weight: 600;
+        margin: 2% 0 2%;
+        color: #ffffff;
+    }
+    .hero-section .top p{
+        color: #ffffff;
+        text-align: start;
+        font-size: 120%;
+        width: 92%;
+        margin-bottom: 3%;
+    }
+    .hero-section .top a label{
+        padding: 5% 10%;
+        color: #CC1212;
+        margin: 0 0 15% 5%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .hero-section .bottom{
+        width: 40%;
+    }
+    .hero-section .bottom img{
+        padding: 25% 0 0 0;
+        width: 100%;
+    }
+    .mission{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        padding: 3% 5% 10%;
+        background-color: #ffffff;
+    }
+    .mission .top{
+        width: 50%;
+        margin: 5% 0 0 50%;
+        text-align: start;
+    }
+    .mission .top label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding-bottom: 2%;
+    }
+    .mission .top h2{
+        font-weight: 700;
+        text-align: start;
+        width: 80%;
+        padding-bottom: 4%;
+    }
+    .mission .top p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 83%;
+        text-align: start;
+        font-size: 130%;
+        padding-bottom: 15%;
+    }
+    .mission .top a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+        -webkit-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 10px 5px -3px rgba(0,0,0,0.56);
+        box-shadow: 0px 10px 5px -3px #BDD7F2;
+    }
+    .mission .bottom{
+        position: absolute;
+        width: 40%;
+        height: fit-content;
+        top: 50px;
+        left: 0%;
+    }
+    .mission .bottom img{
+        width: 70%;
+        height: auto;
+    }
+    .mission .bottom .move .img1{
+        z-index: 1;
+        top: 0;
+        left: 50px;
+        position: absolute;
+    }
+    .mission .bottom .move .img2{
+        position: absolute;
+        left: 180px;
+        top: 280px;
+    }
+    .service{
+        width: 100%;
+        background: #ffffff ;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    .service label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .service h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 3%;
+    }
+    .service p{
+        color: color-mix(in srgb, black , white 40%);
+        width: 80%;
+        margin: 0 auto;
+        font-size: 130%;
+        padding-bottom: 6%;
+    }
+    .service .cards{
+        width: 100%;
+        padding-left: 5%;
+        height: fit-content;
+    }
+    .service .cards .card{
+        width: 28%;
+        height: fit-content;
+        padding: 0;
+        margin: 0 2% 10%;
+        -webkit-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        box-shadow: 0px -6px 25px 5px rgba(0,0,0,0.56);
+        border-radius: 2%;
+    }
+    .service .cards .card img{
+        width: 100%;
+        height: auto;
+        background-color: #CC1212;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+    .service .cards .card .group{
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    .service .cards .card label{
+        font-size: 130%;
+        text-align: start;
+        width: fit-content;
+        background-color: #CC1212;
+        color: #ffffff;
+        padding: 4% 15% 4% 8%;
+    }
+    .service .cards .card .imge{
+        width: 15%;
+        position: absolute;
+        top: 4px;
+        left: 240px;
+        padding: 3%;
+        border: #CC1212 solid 2px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 0 rgba(255,255,255,1);
+    }
+    .service .cards .card .imge-2{
+        position: absolute;
+        left: 220px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    .service .cards .card p{
+        text-align: start;
+        padding: 10% 0;
+        color: #000000;
+        font-weight: 600;
+    }
+    .service .cards .card-2 p{
+        padding: 5% 0;
+    }
+    .service .cards .card a{
+        color: #CC1212;
+        text-align: start;
+        text-decoration: none;
+        padding: 10% 10%;
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .service .link a {
+        padding: 5% 10%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .quote{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .quote label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .quote h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 4%;
+    }
+    .quote .in{
+        width: 100%;
+        padding: 0% 0 5% 4%;
+    }
+    .quote .in input{
+        padding: 3% 5%; 
+        border: #CC1212 1px solid;
+        width: 28%;
+        margin: 2% 2% 2% 2%;
+    }
+    .quote a {
+        padding: 2.5% 5%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .pat{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .pat label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .pat h3{
+        font-weight: 700;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .pat img{
+        width: 30%;
+        margin: 3% 0 0 3%;
+    }
+    .work{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .work label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .work h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    .work .car{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .work .cards{
+        width: 40%;
+        padding: 5% 5%;
+        margin:0 5% 5%;
+        border-radius: 5%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .work .cards h5{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        padding: 5% 0;
+    }
+    .work.cards p{
+        color: #000000;
+    }
+    .work a {
+        padding: 2.5% 5%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .test{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .test label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .test h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .test .cards{
+        width: 25%;
+        position: relative;
+        padding: 5% 2% 3% 2%;
+        color: #000000;
+        border-radius: 5%;
+        margin: 0 0 10% 6%;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    .test .cards .pic{
+        position: absolute;
+        top: -40px;
+        left: 100px;
+        border-radius: 50%;
+        box-shadow: 0px -8px 15px 1px rgba(0,0,0,0.75);
+    }
+    .join{
+        width: 100%;
+        background-color: #E3E9ED;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .join label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 2%;
+    }
+    .join h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 70%;
+        font-size: 120%;
+        padding-bottom: 4%;
+    }
+    .join p{
+        margin-bottom: 8%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .join a {
+        padding: 4% 8%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #CC1212;
+    }
+    .num{
+        width: 96%;
+        margin: 0 2%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+    }
+    .num .box{
+        border: #CC1212 1px solid;
+    }
+    .num label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 10% 0 5%;
+    }
+    .num h3{
+        font-weight: 600;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 150%;
+        padding-bottom: 15%;
+    }
+    .contact{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 10%;
+    }
+    .contact label{
+        color: #CC1212;
+        font-size: 150%;
+        font-weight: 700;
+        padding: 5% 0 2%;
+    }
+    .contact h3{
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 3%;
+    }
+    .contact p{
+        margin-bottom: 6%;
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .contact a {
+        padding: 3% 6%;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+    .sus{
+        width: 100%;
+        background-color: #CC1212;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 8%;
+    }
+    .sus label{
+        color: #ffffff;
+        font-size: 120%;
+        font-weight: 600;
+        padding: 5% 0 2%;
+    }
+    .sus h3{
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 120%;
+        padding-bottom: 3%;
+    }
+    .sus .row{
+        width: 100%;
+        padding: 0 0 0 8% ;
+    }
+    .sus .row input{
+        padding: 3%;
+        margin-right: 5%;
+        width: 60%;
+    }
+    .sus .row button{
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+    }
+    footer{
+        width: 100%;
+        background-color: #000000;
+        text-align: start;
+        padding: 0;
+    }
+    footer .top{
+        width: 100%;
+        padding: 0 0% 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        border-bottom: 1px solid #CC1212;
+    }
+    footer .top .box{
+        align-items: start;
+        padding: 0;
+        background-color: aqua;
+        margin-top: 2%;
+    }
+    footer .top .box a{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    footer .top .box a label{
+        color: #CC1212;
+        font-size: 120%;
+        padding: 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 120%;
+        padding-left: 15%;
+    }
+    footer .top .boxs{
+        margin: 15% 0 8% 0;
+        background-color: blue;
+    }
+    footer .top .box p{
+        color: #ffffff;
+        width: 70%;
+        padding: 10% 0;
+    }
+    footer .top .box label{
+        color: #CC1212;
+        font-size: 150%;
+        margin-top: 10%;
+        /* padding-left: 10%; */
+    }
+    footer .top .box ul{
+        align-items: start;
+    }
+    footer .top .box ul li{
+        padding: 10% 0 0 0;
+    }
+    
+    footer .top .box ul li a{
+        text-decoration: none;
+        list-style: none;
+    }
+    footer .top .box ul li a i{
+        color: #ffffff;
+        padding-right: 5%;
+    }
+    footer .bottom{
+        width: 100%;
+        padding: 2% 4% 4%;
+    }   
+    
+    footer .bottom .left img{
+        width: 6%;
+    }
+    footer .bottom .left label{
+        color: #ffffff;
+        font-size: 150%;
+        padding-left: 2%;
+    }
+    footer .bottom i{
+        color: #ffffff;
+        font-size: 200%;
+        padding: 0 8% 0 0;
+    }
+}
