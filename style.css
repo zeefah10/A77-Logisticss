@@ -2798,7 +2798,6 @@ body{
     footer .top .box{
         align-items: start;
         padding: 0;
-        background-color: aqua;
         margin-top: 2%;
     }
     footer .top .box a{
@@ -2817,7 +2816,6 @@ body{
     }
     footer .top .boxs{
         margin: 15% 0 8% 0;
-        background-color: blue;
     }
     footer .top .box p{
         color: #ffffff;
@@ -2828,7 +2826,6 @@ body{
         color: #CC1212;
         font-size: 150%;
         margin-top: 10%;
-        /* padding-left: 10%; */
     }
     footer .top .box ul{
         align-items: start;
