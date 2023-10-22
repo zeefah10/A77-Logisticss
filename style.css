@@ -12,7 +12,30 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+body nav .container-fluid a img{
+    width: 8%;
+    height: auto;
+}
+body .mission .bottom img{
+    border: #CC1212 1px solid;
+    border-radius: 5%;
+}
+body .mission .bottom .change{
+    width: 300px;
+    height: 450px;
+}
+body .test .cards .pic{
+    width: 30%;
+    height: 30%;
+}
+body .test .cards .star{
+    width: 10%;
+    height: auto;
+}
+body footer .top .box a img{
+    width: 8%;
+    height: auto;
+}
 @media only screen and (max-width: 600px){
     nav{
         width: 100%;
@@ -153,16 +176,18 @@ body{
         position: relative;
         height: 100%;
     }
-    .mission .bottom .move .img1{
+    .mission .bottom .move .change{
         z-index: 1;
-        top: 0;
-        left: 20%;
+        top: -80px;
+        left: 15%;
         position: absolute;
     }
-    .mission .bottom .move .img2{
+    .mission .bottom .move .changes{
         position: absolute;
-        left: 45%;
-        top: 200%;
+        left: 35%;
+        top: 300%;
+        width: 350px;
+        height: 250px;
     }
     .service{
         width: 100%;
@@ -662,16 +687,18 @@ body{
         position: relative;
         height: 100%;
     }
-    .mission .bottom .move .img1{
+    .mission .bottom .move .change{
         z-index: 1;
-        top: 0;
-        left: 20%;
+        top: -50px;
+        left: 15%;
         position: absolute;
     }
-    .mission .bottom .move .img2{
+    .mission .bottom .move .changes{
         position: absolute;
-        left: 45%;
-        top: 200%;
+        left: 35%;
+        top: 300%;
+        width: 350px;
+        height: 250px;
     }
     .service{
         width: 100%;
@@ -1237,16 +1264,21 @@ body{
         position: relative;
         height: 100%;
     }
-    .mission .bottom .move .img1{
+    .mission .bottom .move .change{
         z-index: 1;
         top: 0;
+        top: -40px;
+        height: 600%;
+        width: 50%;
         left: 20%;
         position: absolute;
     }
-    .mission .bottom .move .img2{
+    .mission .bottom .move .changes{
         position: absolute;
-        left: 45%;
-        top: 250%;
+        width: 500px;
+        height: 300px;
+        left: 35%;
+        top: 400%;
     }
     .service{
         width: 100%;
@@ -1796,10 +1828,10 @@ body{
         width: 83%;
         margin: 0 auto;
         font-size: 130%;
-        padding-bottom: 15%;
+        padding-bottom: 10%;
     }
     .mission .top .moves{
-        margin-top: 100%;
+        margin-top: 90%;
     }
     .mission .top a {
         padding: 5% 10%;
@@ -1827,15 +1859,19 @@ body{
         position: relative;
         height: 100%;
     }
-    .mission .bottom .move .img1{
+    .mission .bottom .move .change{
         z-index: 1;
         top: 0;
-        left: 20%;
+        left: 30%;
+        width: 400px;
+        height: 600px;
         position: absolute;
     }
-    .mission .bottom .move .img2{
+    .mission .bottom .move .changes{
         position: absolute;
         left: 45%;
+        width: 500px;
+        height: 400px;
         top: 350%;
     }
     .service{
@@ -2409,13 +2445,13 @@ body{
         width: 70%;
         height: auto;
     }
-    .mission .bottom .move .img1{
+    .mission .bottom .move .change{
         z-index: 1;
         top: 0;
         left: 50px;
         position: absolute;
     }
-    .mission .bottom .move .img2{
+    .mission .bottom .move .changes{
         position: absolute;
         left: 180px;
         top: 280px;
