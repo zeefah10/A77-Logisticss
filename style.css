@@ -147,9 +147,6 @@ body footer .top .box a img{
         font-size: 130%;
         padding-bottom: 15%;
     }
-    .mission .top .moves{
-        margin-top: 150%;
-    }
     .mission .top a {
         padding: 5% 10%;
         color: #ffffff;
@@ -161,35 +158,7 @@ body footer .top .box a img{
         box-shadow: 0px 10px 5px -3px #BDD7F2;
     }
     .mission .bottom{
-        position: absolute;
-        width: 80%;
-        height: fit-content;
-        top: 580px;
-        left: 0%;
-    }
-    .mission .bottom img{
-        width: 60%;
-        height: auto;
-    }
-    .mission .bottom .move{
-        width: 100%;
-        position: relative;
-        height: 100%;
-    }
-    .mission .bottom .move .change{
-        z-index: 1;
-        top: 120%;
-        left: 25%;
-        width: 60%;
-        height: 700%;
-        position: absolute;
-    }
-    .mission .bottom .move .changes{
-        position: absolute;
-        left: 40%;
-        top: 540%;
-        width: 80%;
-        height: 400%;
+        display: none;
     }
     .service{
         width: 100%;
@@ -662,9 +631,6 @@ body footer .top .box a img{
         font-size: 130%;
         padding-bottom: 15%;
     }
-    .mission .top .moves{
-        margin-top: 120%;
-    }
     .mission .top a {
         padding: 5% 10%;
         color: #ffffff;
@@ -676,33 +642,7 @@ body footer .top .box a img{
         box-shadow: 0px 10px 5px -3px #BDD7F2;
     }
     .mission .bottom{
-        position: absolute;
-        width: 80%;
-        height: fit-content;
-        top: 490px;
-        left: 0%;
-    }
-    .mission .bottom img{
-        width: 60%;
-        height: auto;
-    }
-    .mission .bottom .move{
-        width: 100%;
-        position: relative;
-        height: 100%;
-    }
-    .mission .bottom .move .change{
-        z-index: 1;
-        top: 0;
-        left: 20%;
-        position: absolute;
-    }
-    .mission .bottom .move .changes{
-        position: absolute;
-        left: 40%;
-        top: 400%;
-        width: 350px;
-        height: 250px;
+        display: none;
     }
     .service{
         width: 100%;
@@ -1241,9 +1181,6 @@ body footer .top .box a img{
         font-size: 130%;
         padding-bottom: 15%;
     }
-    .mission .top .moves{
-        margin-top: 80%;
-    }
     .mission .top a {
         padding: 5% 10%;
         color: #ffffff;
@@ -1255,36 +1192,7 @@ body footer .top .box a img{
         box-shadow: 0px 10px 5px -3px #BDD7F2;
     }
     .mission .bottom{
-        position: absolute;
-        width: 80%;
-        height: fit-content;
-        top: 490px;
-        left: 0%;
-    }
-    .mission .bottom img{
-        width: 60%;
-        height: auto;
-    }
-    .mission .bottom .move{
-        width: 100%;
-        position: relative;
-        height: 100%;
-    }
-    .mission .bottom .move .change{
-        z-index: 1;
-        top: 0;
-        top: -40px;
-        height: 500%;
-        width: 50%;
-        left: 20%;
-        position: absolute;
-    }
-    .mission .bottom .move .changes{
-        position: absolute;
-        width: 400px;
-        height: 250px;
-        left: 35%;
-        top: 300%;
+        display: none;
     }
     .service{
         width: 100%;
