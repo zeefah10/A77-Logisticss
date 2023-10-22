@@ -403,7 +403,7 @@ body footer .top .box a img{
     }
     .join{
         width: 30%;
-        height: 30%;
+        height: fit fit-content;
         width: 100%;
         background-color: #E3E9ED;
         text-align: center;
