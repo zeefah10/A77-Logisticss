@@ -148,7 +148,7 @@ body footer .top .box a img{
         padding-bottom: 15%;
     }
     .mission .top .moves{
-        margin-top: 95%;
+        margin-top: 150%;
     }
     .mission .top a {
         padding: 5% 10%;
@@ -178,18 +178,18 @@ body footer .top .box a img{
     }
     .mission .bottom .move .change{
         z-index: 1;
-        top: -60px;
+        top: 120%;
         left: 25%;
-        width: 200px;
-        height: 350px;
+        width: 60%;
+        height: 700%;
         position: absolute;
     }
     .mission .bottom .move .changes{
         position: absolute;
         left: 40%;
-        top: 250%;
-        width: 250px;
-        height: 200px;
+        top: 540%;
+        width: 80%;
+        height: 400%;
     }
     .service{
         width: 100%;
@@ -663,7 +663,7 @@ body footer .top .box a img{
         padding-bottom: 15%;
     }
     .mission .top .moves{
-        margin-top: 90%;
+        margin-top: 120%;
     }
     .mission .top a {
         padding: 5% 10%;
@@ -693,14 +693,14 @@ body footer .top .box a img{
     }
     .mission .bottom .move .change{
         z-index: 1;
-        top: -50px;
-        left: 25%;
+        top: 0;
+        left: 20%;
         position: absolute;
     }
     .mission .bottom .move .changes{
         position: absolute;
-        left: 35%;
-        top: 300%;
+        left: 40%;
+        top: 400%;
         width: 350px;
         height: 250px;
     }
